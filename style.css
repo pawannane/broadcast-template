@@ -1,0 +1,551 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.container {
+  color: #fff;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+header .wrapper {
+  max-width: 100%;
+  width: 98%;
+  padding: 16px 1%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #111d39;
+}
+
+.logo-header > a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: none;
+}
+
+.uppercase-word {
+  text-transform: uppercase;
+}
+
+.menu {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Nav Icon */
+.nav-icon {
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+
+.nav-icon span {
+  width: 12px;
+  height: 2px;
+  border-radius: 4px;
+  margin: 2px 0;
+  display: block;
+  background: #b1b6b9;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 6px;
+  transform-origin: left center;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 12px;
+  transform-origin: left center;
+}
+
+.nav-link-wrapper {
+  display: none;
+}
+
+.nav-link-wrapper a {
+  color: #fff;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  broadcast section styling starts here
+=================================*/
+.broadcast-container{
+  background-image: url("https://dummyimage.com/1350x650/000/303030");
+  background-repeat: no-repeat;
+  background-size: cover;            
+}
+
+.broadcast-container .wrapper {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.broadcast-container .heading-two {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.broadcast-container p {
+  max-width: 650px;
+  margin-top: 50px;
+}
+
+.broadcast-container .wrapper > div {
+  padding: 22px 2.37%;
+  margin-top: 46px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*========================================
+  broadcast section styling ends here
+===========================================*/
+
+/*========================================
+  image section 1 styling starts here
+==========================================*/
+.img-section-container-1{ background-color: #0C212F; }
+
+.img-section-container-1 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.heading-three {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.heading-three + p {
+  color: #868a87;
+}
+
+.img-section-container-1 p {
+  margin-top: 38px;
+}
+
+.img-section-container-1 .img-container {
+  margin-top: 60px;
+  display: flex;
+  gap: 3.5%;
+}
+
+.img-section-container-1 .img-caption {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #253640;
+}
+
+/*=================================
+  image section 1 styling ends here
+====================================*/
+
+/*========================================
+  image section 2 styling starts here
+==========================================*/
+.img-section-container-2{background-color: #172631;}
+.img-section-container-2 .wrapper {
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.img-section-container-2 p {
+  margin-top: 38px;
+}
+
+.button-img-container {
+  margin-top: 62px;
+  display: flex;
+  gap: 2.2%;
+}
+
+.button-container {
+  width: 20%;
+}
+
+.button-container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-container > ul li a {
+  width: 76%;
+  padding: 10px 12%;
+  border-radius: 6px;
+  background-color: #26343a;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.button-container .active-btn {
+  background-color: #9d12bc;
+}
+
+.img-section-container-2 .img-container {
+  width: 80%;
+}
+
+.img-section-container-2 .img-container > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 30px;
+}
+
+/*========================================
+  image section 2 styling ends here
+==========================================*/
+
+/*========================================
+  image section 3 styling starts here
+==========================================*/
+.img-section-container-3{ background-color: #131c22;}
+
+.img-section-container-3 .wrapper {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.img-section-container-3 p {
+  margin-top: 38px;
+}
+
+.img-section-container-3 .img-container {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-section-container-3 .img-container > li{
+  width: 30%;
+}
+
+.img-section-container-3 .img-caption {
+  padding: 34px 26px;
+  background-color: #253640;
+  text-align: center;
+}
+
+/*========================================
+  image section 3 styling ends here
+==========================================*/
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+footer{background-color: #020b13;}
+footer .wrapper {
+  padding: 90px 0;
+}
+
+.footer-top-container .footer-nav-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.heading-four {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-nav-inner-container-1 > ul,
+.footer-nav-inner-container-2 > ul,
+.footer-nav-inner-container-3 > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-inner-container-1 > ul > li,
+.footer-nav-inner-container-2 > ul > li,
+.footer-nav-inner-container-3 > ul > li {
+  width: 350px;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-nav-inner-container-1 > ul > li:last-child,
+.footer-nav-inner-container-2 > ul > li:last-child,
+.footer-nav-inner-container-3 > ul > li:last-child {
+  border-bottom: none;
+}
+
+.footer-nav-inner-container-1 > ul > li > a,
+.footer-nav-inner-container-2 > ul > li > a,
+.footer-nav-inner-container-3 > ul > li > a {
+  color: #fff;
+}
+
+.footer-bottom-container {
+  margin-top: 68px;
+  text-align: center;
+}
+
+.social-icons-container {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 20px;
+}
+
+.copyright {
+  color: #3a3a37;
+  font-size: 13px;
+}
+
+.bold {
+  color: #abbab7;
+  font-weight: 600;
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+}
